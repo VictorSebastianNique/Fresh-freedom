@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Libertad Fresca | Conectamos productores y restaurantes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <nav>
+                <div class="logo">La Libertad Fresca</div>
+                <ul>
+                    <li><a href="#how-it-works">Cómo funciona</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <li><a href="#contact">Regístrate</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>Conectamos <span>productores liberteños</span> directamente con <span>restaurantes</span></h1>
+                <p>Pedidos en 2 clics, trazabilidad en tiempo real y logística refrigerada para Trujillo y toda La Libertad.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary">¡Regístrate Gratis!</a>
+                    <a href="#how-it-works" class="btn-secondary">Ver cómo funciona →</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <h2>Beneficios para todos</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Para Restaurantes</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Ahorra 30% en insumos frescos</li>
+                    <li><i class="fas fa-check"></i> Trazabilidad del producto</li>
+                    <li><i class="fas fa-check"></i> Logística refrigerada</li>
+                </ul>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Para Productores</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Gana 40% más</li>
+                    <li><i class="fas fa-check"></i> App fácil de usar</li>
+                    <li><i class="fas fa-check"></i> Compra recurrente</li>
+                </ul>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Para La Libertad</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Reduce el desperdicio</li>
+                    <li><i class="fas fa-check"></i> Turismo sostenible</li>
+                    <li><i class="fas fa-check"></i> Economía local</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="testimonial">
+        <div class="testimonial-content">
+            <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Juan Pérez" class="testimonial-img">
+            <blockquote>
+                "Antes ganaba S/ 8 por kg de pescado. Ahora con La Libertad Fresca, vendo a S/ 15 directamente a cevicherías de Trujillo."
+                <cite>— Juan Pérez, Pescador de Huanchaco</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>¿Cómo funciona?</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Registro</h3>
+                <p>Productores suben sus productos, restaurantes exploran el catálogo.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Pedido</h3>
+                <p>Restaurantes compran con Yape/Plin o contraentrega.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Entrega</h3>
+                <p>Mototaxis refrigerados llevan los productos en menos de 24h.</p>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <h2>Únete a la revolución gastronómica de La Libertad</h2>
+        <form id="signup-form" class="signup-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Celular" required>
+            </div>
+            <div class="form-group">
+                <select id="user-type" required>
+                    <option value="" disabled selected>Soy...</option>
+                    <option value="producer">Productor</option>
+                    <option value="restaurant">Restaurante</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Correo electrónico (opcional)">
+            </div>
+            <button type="submit" class="btn-primary">Quiero probarlo gratis</button>
+        </form>
+        <p class="guarantee">Sin costos ocultos. Cancela cuando quieras.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">La Libertad Fresca</div>
+            <div class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="mailto:hola@lalibertadfresca.com">Contacto</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 La Libertad Fresca. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
