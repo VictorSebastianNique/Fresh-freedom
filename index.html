@@ -3,149 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Libertad Fresca | Conectamos productores y restaurantes</title>
+    <title>Carnes & Pescados La Libertad | Proveedores directos para restaurantes</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #E74C3C;  /* Rojo carnes */
+            --secondary: #3498DB; /* Azul pescados */
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+        }
+    </style>
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- Hero Section - Loco 1: Enfoque radical -->
     <header class="hero">
         <div class="hero-overlay">
             <nav>
-                <div class="logo">La Libertad Fresca</div>
+                <div class="logo">Carnes & Pescados LL</div>
                 <ul>
                     <li><a href="#how-it-works">Cómo funciona</a></li>
-                    <li><a href="#benefits">Beneficios</a></li>
-                    <li><a href="#contact">Regístrate</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#contact">Ordenar ahora</a></li>
                 </ul>
             </nav>
             <div class="hero-content">
-                <h1>Conectamos <span>productores liberteños</span> directamente con <span>restaurantes</span></h1>
-                <p>Pedidos en 2 clics, trazabilidad en tiempo real y olvidate de proveedores terceros.</p>
+                <h1>Proveedores <span>directos</span> de <span>carnes y pescados</span> para restaurantes</h1>
+                <p>Calidad certificada, trazabilidad y entregas en 24 horas. Sin intermediarios.</p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn-primary">¡Regístrate Gratis!</a>
-                    <a href="#how-it-works" class="btn-secondary">Ver cómo funciona →</a>
+                    <a href="#contact" class="btn-primary">¡Pedir ahora!</a>
+                    <a href="#products" class="btn-secondary">Ver productos →</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
-        <h2>Beneficios para todos</h2>
+    <!-- Loco 2: Nicho específico -->
+    <section id="products" class="benefits">
+        <h2>Nuestros productos estrella</h2>
         <div class="benefits-grid">
-            <div class="benefit-card">
-                <i class="fas fa-utensils"></i>
-                <h3>Para Restaurantes</h3>
+            <div class="benefit-card" style="border-top: 4px solid var(--primary);">
+                <i class="fas fa-drumstick-bite"></i>
+                <h3>Cortes premium</h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Ahorra 30% en insumos frescos</li>
-                    <li><i class="fas fa-check"></i> Trazabilidad del producto</li>
-                    <li><i class="fas fa-check"></i> Logística refrigerada</li>
+                    <li><i class="fas fa-check"></i> Lomo fino</li>
+                    <li><i class="fas fa-check"></i> Carne de cerdo de calidad </li>
+                    <li><i class="fas fa-check"></i> Chorizo artesanal y muchas cosas más</li>
                 </ul>
             </div>
-            <div class="benefit-card">
-                <i class="fas fa-user-tie"></i>
-                <h3>Para Productores</h3>
+            <div class="benefit-card" style="border-top: 4px solid var(--secondary);">
+                <i class="fas fa-fish"></i>
+                <h3>Pescados frescos</h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Gana 40% más</li>
-                    <li><i class="fas fa-check"></i> App fácil de usar</li>
-                    <li><i class="fas fa-check"></i> Compra recurrente</li>
-                </ul>
-            </div>
-            <div class="benefit-card">
-                <i class="fas fa-leaf"></i>
-                <h3>Para La Libertad</h3>
-                <ul>
-                    <li><i class="fas fa-check"></i> Reduce el desperdicio</li>
-                    <li><i class="fas fa-check"></i> Turismo sostenible</li>
-                    <li><i class="fas fa-check"></i> Economía local</li>
+                    <li><i class="fas fa-check"></i> Pescado fresco y de primera calidad </li>
+                    <li><i class="fas fa-check"></i> Lenguado y corvina, la mayor demanda en restaurantes</li>
+                    <li><i class="fas fa-check"></i> Camarones (Chicama), mariscos y langostinos</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Social Proof -->
+    <!-- Loco 3: Propuesta única -->
     <section class="testimonial">
         <div class="testimonial-content">
-            <img src="Perfilprueba.png" alt="Juan Pérez" class="testimonial-img">
+            <img src="carnicero.png" alt="Carlos Rodríguez" class="testimonial-img">
             <blockquote>
-                "Antes ganaba S/ 8 por kg de pescado. Ahora con La Libertad Fresca, vendo a S/ 15 directamente a cevicherías de Trujillo."
-                <cite>— Juan Pérez, Pescador de Huanchaco</cite>
+                "Ahora los restaurantes me pagan S/ 25 por kg directo, antes los intermediarios me daban S/ 15."
+                <cite>— Carlos Rodríguez, Productor de carnes</cite>
             </blockquote>
         </div>
     </section>
 
-    <!-- How It Works -->
+    <!-- Loco 4: Proceso simple -->
     <section id="how-it-works" class="how-it-works">
-        <h2>¿Cómo funciona?</h2>
+        <h2>Fácil como 1-2-3</h2>
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>Registro</h3>
-                <p>Productores suben sus productos, restaurantes exploran el catálogo.</p>
+                <h3>Elige</h3>
+                <p>Selecciona cortes o pescados de nuestro catálogo.</p>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>Pedido</h3>
-                <p>Restaurantes compran con Yape/Plin o contraentrega.</p>
+                <h3>Ordena</h3>
+                <p>Paga con Yape/Plin o contraentrega.</p>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>Entrega</h3>
-                <p>Puedes recoger los productos en menos de 24h.</p>
+                <h3>Recibe</h3>
+                <p>Entrega en 24h con control de temperatura.</p>
             </div>
         </div>
-        <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/xvkcDCiuUIY" 
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
-
     </section>
 
-    <!-- CTA Section -->
+    <!-- Loco 5: Llamado a la acción claro -->
     <section id="contact" class="cta">
-        <h2>Únete a la revolución gastronómica de La Libertad</h2>
+        <h2>¿Tienes un restaurante? Obtén carnes y pescados premium hoy</h2>
         <form id="signup-form" class="signup-form">
             <div class="form-group">
-                <input type="text" id="name" placeholder="Nombre completo" required>
+                <input type="text" id="name" placeholder="Nombre de tu restaurante" required>
             </div>
             <div class="form-group">
                 <input type="tel" id="phone" placeholder="Celular" required>
             </div>
             <div class="form-group">
-                <select id="user-type" required>
-                    <option value="" disabled selected>Soy...</option>
-                    <option value="producer">Productor</option>
-                    <option value="restaurant">Restaurante</option>
+                <select id="product-type" required>
+                    <option value="" disabled selected>Interesado en...</option>
+                    <option value="carnes">Carnes premium</option>
+                    <option value="pescados">Pescados frescos</option>
+                    <option value="ambos">Ambos</option>
                 </select>
             </div>
-            <div class="form-group">
-                <input type="email" id="email" placeholder="Correo electrónico (opcional)">
-            </div>
-            <button type="submit" class="btn-primary">Quiero probarlo gratis</button>
+            <button type="submit" class="btn-primary">Quiero precios directos</button>
         </form>
-        <p class="guarantee">Sin costos ocultos. Cancela cuando quieras.</p>
+        <p class="guarantee">Primer pedido con 10% de descuento.</p>
     </section>
 
-    <!-- Footer -->
+    <!-- Loco 6: Enfoque local -->
+    <section class="local">
+        <h2>100% liberteño</h2>
+        <p>Trabajamos solo con productores de:<br>
+        <strong>Trujillo, Huanchaco, Virú y Salaverry</strong></p>
+        <img src="mapa-libertad.png" alt="Zona de cobertura" style="max-width: 300px;">
+    </section>
+
+    <!-- Loco 7: Garantía -->
+    <section class="guarantee-section">
+        <div class="guarantee-card">
+            <i class="fas fa-award"></i>
+            <h3>Garantía de frescura</h3>
+            <p>Reembolso total si no cumple nuestros estándares</p>
+        </div>
+    </section>
+
+    <!-- Loco 8: Simpleza -->
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">La Libertad Fresca</div>
-            <div class="footer-links">
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Política de privacidad</a>
-                <a href="mailto:hola@lalibertadfresca.com">Contacto</a>
-            </div>
+            <div class="footer-logo">Carnes & Pescados LL</div>
+            <p>La forma más simple de comprar proteínas premium</p>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i> 944 123 456</a>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2024 La Libertad Fresca. Todos los derechos reservados.
+            &copy; 2024 - Solo para restaurantes en La Libertad
         </div>
     </footer>
 
