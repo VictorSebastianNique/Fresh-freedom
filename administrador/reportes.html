@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes | La Libertad Fresca</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../shared/styles.css">
+  <link rel="stylesheet" href="../stylescl.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="client-dashboard">
+    <header class="client-header">
+      <div class="logo">
+        <img src="../La Libertad Fresca.png" alt="Logo">
+        <span>Fresh Freedom</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+          <li><a href="productores.html"><i class="fas fa-store"></i> Productores</a></li>
+          <li><a href="restaurantes.html"><i class="fas fa-utensils"></i> Restaurantes</a></li>
+          <li><a href="transaction.html"><i class="fas fa-exchange-alt"></i> Transacciones</a></li>
+          <li class="active"><a href="reportes.html"><i class="fas fa-chart-line"></i> Reportes</a></li>
+          <li><a href="configuracion.html"><i class="fas fa-cog"></i> Configuración</a></li>
+          <li><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <img src="../Perfilprueba.png" alt="Admin">
+        <span>Administrador</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </header>
+
+    <main class="client-content">
+      <section class="page welcome-banner">
+        <h2>Reportes y Estadísticas Generales</h2>
+        <p>Resumen visual y detallado del rendimiento de la plataforma.</p>
+      </section>
+
+      <section class="page">
+        <div class="quick-actions">
+          <button class="btn btn-accent" onclick="window.print()"><i class="fas fa-file-pdf"></i> Imprimir Reporte</button>
+          <button class="btn btn-secondary"><i class="fas fa-file-excel"></i> Exportar a Excel</button>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-info">
+              <h4>Total Ventas</h4>
+              <p class="price">S/ 145,000</p>
+              <i class="fas fa-wallet"></i>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <h4>Transacciones</h4>
+              <p class="price">765</p>
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <h4>Clientes Activos</h4>
+              <p class="price">62</p>
+              <i class="fas fa-user-friends"></i>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <h4>Productores Registrados</h4>
+              <p class="price">48</p>
+              <i class="fas fa-tractor"></i>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <h4>Productos en Catálogo</h4>
+              <p class="price">215</p>
+              <i class="fas fa-box"></i>
+            </div>
+          </div>
+        </div>
+
+        <canvas id="chartReport" height="120"></canvas>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th>Transacciones</th>
+              <th>Ingresos</th>
+              <th>Restaurantes</th>
+              <th>Productores</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Junio 2025</td>
+              <td>205</td>
+              <td>S/ 58,750</td>
+              <td>18</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Mayo 2025</td>
+              <td>190</td>
+              <td>S/ 52,340</td>
+              <td>16</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Abril 2025</td>
+              <td>172</td>
+              <td>S/ 47,000</td>
+              <td>14</td>
+              <td>13</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('chartReport').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Abril', 'Mayo', 'Junio'],
+        datasets: [
+          {
+            label: 'Ingresos (S/)',
+            data: [47000, 52340, 58750],
+            backgroundColor: '#00796b'
+          },
+          {
+            label: 'Transacciones',
+            data: [172, 190, 205],
+            backgroundColor: '#ffa726'
+          },
+          {
+            label: 'Clientes',
+            data: [52, 58, 62],
+            backgroundColor: '#4db6ac'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' },
+          title: { display: true, text: 'Estadísticas por Mes' }
+        }
+      }
+    });
+  </script>
+  <script src="../shared/script.js"></script>
+</body>
+</html>
