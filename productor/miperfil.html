@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Panel | La Libertad Fresca</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../shared/styles.css" />
+  <link rel="stylesheet" href="../stylescl.css" />
+</head>
+<body>
+  <div class="client-dashboard">
+    <!-- HEADER -->
+    <header class="client-header">
+      <div class="logo">
+        <img src="../La Libertad Fresca.png" alt="Logo La Libertad Fresca" />
+        La Libertad Fresca
+      </div>
+      <nav>
+        <ul>
+          <li><a href="productor.html"><i class="fas fa-tachometer-alt"></i> Resumen</a></li>
+          <li><a href="misproductos.html"><i class="fas fa-fish"></i> Mis Productos</a></li>
+          <li><a href="pedidos.html"><i class="fas fa-clipboard-list"></i> Pedidos</a></li>
+          <li><a href="estadisticas.html"><i class="fas fa-chart-line"></i> Estadísticas</a></li>
+          <li><a href="pagos.html"><i class="fas fa-wallet"></i> Pagos</a></li>
+          <li class="active"><a href="miperfil.html"><i class="fas fa-user"></i> Mi Perfil</a></li>
+          <li><a href="../index.html"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <img src="../Perfilprueba.png" alt="Productor" />
+        <span>Pescados Huanchaco</span>
+      </div>
+    </header>
+
+    <main class="client-content container" style="padding: 20px;">
+  <h1>Mi Perfil</h1>
+  <p>Gestiona el perfil de tu empresa.</p>
+
+  <div class="profile-config-container" style="display: flex; align-items: flex-start; gap: 40px; margin-top: 20px;">
+    <!-- Foto perfil -->
+    <div class="profile-photo" style="flex-shrink: 0;">
+      <img 
+        src="../Perfilprueba.png" 
+        alt="Productor" 
+        style="width: 150px; height: 150px; object-fit: cover; border-radius: 10px; border: 2px solid #00796b;"
+      />
+    </div>
+
+    <!-- Formulario -->
+    <form style="flex-grow: 1; max-width: 500px;">
+      <label for="empresa" style="display:block; margin-bottom: 8px; font-weight: 600;">Nombre de la empresa</label>
+      <input type="text" id="empresa" name="empresa" value="Pescados Huanchaco" style="width:100%; padding:8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="correo" style="display:block; margin-bottom: 8px; font-weight: 600;">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" value="contacto@pescadoshuanchaco.com" style="width:100%; padding:8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="telefono" style="display:block; margin-bottom: 8px; font-weight: 600;">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" value="+51 987 654 321" style="width:100%; padding:8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="direccion" style="display:block; margin-bottom: 8px; font-weight: 600;">Dirección</label>
+      <textarea id="direccion" name="direccion" rows="3" style="width:100%; padding:8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;">Av. La Marina 123, Trujillo</textarea>
+
+      <button type="submit" style="background:#00796b; color:#fff; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;">
+        Guardar cambios
+      </button>
+    </form>
+  </div>
+</main>
