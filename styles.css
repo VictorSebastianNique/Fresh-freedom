@@ -67,7 +67,7 @@ a {
 
 /* Hero Section */
 .hero {
-    background: url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background: url('https://carniceriagalicia.mx/wp-content/uploads/2021/05/productos-carme-de-cerdo-bg-1024x576.jpg') no-repeat center center/cover;
     height: 100vh;
     min-height: 600px;
     position: relative;
@@ -534,4 +534,38 @@ footer {
     .signup-form {
         padding: 20px;
     }
+}
+.demo-video {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.demo-video h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--dark);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
